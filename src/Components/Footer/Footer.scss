@@ -1,0 +1,31 @@
+@import "styles/shared";
+
+.footer {
+  padding: 20px 20px;
+  background-color: $title-color;
+  color: $light;
+}
+
+.footer-container {
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include for-size(mobile) {
+    width: 480px;
+  }
+
+  @include for-size(tablet) {
+    width: 768px;
+  }
+  @include for-size(desktop) {
+    width: 1200px;
+  }
+}
+
+.footer-copyright {
+  text-align: center;
+}

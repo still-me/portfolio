@@ -1,0 +1,49 @@
+@import "styles/shared";
+
+.cv-button {
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: $light;
+  box-shadow: 0 0 20px $section-bg-color;
+  border-radius: 10px;
+  display: block;
+  background-image: linear-gradient(
+    to right,
+    $title-color 0%,
+    $section-title-color 51%,
+    $title-color 100%
+  );
+
+  @include for-size(tablet) {
+    max-width: 300px;
+    font-size: 20px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @include for-size(desktop) {
+    max-width: 300px;
+  }
+
+  &:hover {
+    background-position: right center;
+    color: $light;
+    text-decoration: none;
+  }
+}
+
+.secondary-title.cv-title {
+  @include for-size(tablet) {
+    margin-bottom: 40px;
+  }
+
+  @include for-size(desktop) {
+    margin-bottom: 50px;
+  }
+}

@@ -1,0 +1,84 @@
+@import "styles/shared";
+
+.nav {
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  z-index: 1000;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: $light;
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.15);
+}
+
+.nav-logo {
+  margin-bottom: 10px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+
+  @include for-size(tablet) {
+    margin-bottom: 0px;
+    height: 60px;
+    width: 60px;
+  }
+}
+
+.nav-container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @include for-size(mobile) {
+    width: 480px;
+  }
+
+  @include for-size(tablet) {
+    width: 768px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @include for-size(desktop) {
+    width: 1200px;
+  }
+}
+
+.nav-item {
+  font-weight: 700;
+  color: $title-color;
+  transition: color 250ms $timing-function;
+}
+
+.nav-item {
+  &:not(:last-child) {
+    margin-right: 10px;
+
+    @include for-size(tablet) {
+      margin-right: 40px;
+    }
+
+    @include for-size(desktop) {
+      margin-right: 60px;
+    }
+  }
+}
+
+.nav-item:hover {
+  color: $section-title-color;
+  cursor: pointer;
+}
+
+.active {
+  color: $section-title-color;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+}

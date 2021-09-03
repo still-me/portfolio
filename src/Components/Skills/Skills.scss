@@ -1,0 +1,48 @@
+@import "styles/shared";
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+h3.skills-title {
+  margin-bottom: 50px;
+
+  @include for-size(tablet) {
+    margin-bottom: 70px;
+  }
+}
+
+.skills-item {
+  margin-right: auto;
+  margin-left: auto;
+  margin: 30px;
+  flex-basis: calc((100% - 2 * 60px) / 2);
+
+  @include for-size(tablet) {
+    margin: 15px;
+    flex-basis: calc((100% - 3 * 30px) / 3);
+  }
+  @include for-size(desktop) {
+    flex-basis: calc((100% - 6 * 30px) / 6);
+  }
+}
+
+.skills-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+
+  border-radius: 4px;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border-color: $title-color;
+  }
+}

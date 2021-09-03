@@ -1,0 +1,9 @@
+@import "styles/shared";
+
+.project-list {
+  @include for-size(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
