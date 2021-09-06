@@ -2,7 +2,7 @@ import "./Hello.scss";
 
 import photoMobile from "../../images/photo-mobile.jpeg";
 import photoTablet from "../../images/photo-tablet.jpeg";
-import photoDesktop from "../../images/photo-desktop.jpg";
+import photoDesktop from "../../images/photo-desktop.jpeg";
 import { ReactComponent as IconTelegram } from "../../images/icon-telegram.svg";
 import { ReactComponent as IconEmail } from "../../images/icon-email.svg";
 import { ReactComponent as IconLinkedin } from "../../images/icon-linkedin.svg";
